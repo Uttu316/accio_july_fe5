@@ -1,0 +1,35 @@
+.container {
+  border: 1px solid brown;
+  padding: 40px;
+  margin: 40px;
+}
+
+.container_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.course_list {
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+}
+.page_container {
+  padding: 20px;
+  text-align: center;
+}
+.course_list_item {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.course_logo {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+}
