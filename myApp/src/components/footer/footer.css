@@ -1,0 +1,14 @@
+.footer_container {
+  background-color: #004d40; /* dark teal */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.heart_icon {
+  color: #e91e63; /* pink/red heart */
+  margin: 0 6px;
+  vertical-align: middle;
+}

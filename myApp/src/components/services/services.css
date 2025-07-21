@@ -1,0 +1,65 @@
+.services_container {
+  max-width: 1200px;
+  margin: 60px auto;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services_heading {
+  font-size: 36px;
+  color: teal;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.services_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service_item {
+  background-color: #e0f2f1; /* light teal background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service_item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service_icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.service_content {
+  flex: 1;
+}
+
+.service_title {
+  font-size: 22px;
+  color: #00796b; /* darker teal */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.service_description {
+  font-size: 16px;
+  color: #004d40; /* even darker teal */
+  line-height: 1.4;
+}

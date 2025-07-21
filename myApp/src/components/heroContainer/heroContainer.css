@@ -1,0 +1,64 @@
+.heroContainer {
+  margin: 20px;
+  margin-top: 60px;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.heroImgBox {
+  height: auto;
+  width: 600px;
+}
+
+.heroImg {
+  height: 100%;
+  width: 100%;
+}
+
+.heroContent {
+  align-self: flex-start;
+  margin-right: 40px;
+}
+.heroHeadeing {
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+.heroDescription {
+  width: 400px;
+}
+.hero_Ai_text {
+  color: teal;
+}
+
+/* New styles for sale_cta */
+.sale_cta {
+  background-color: #008080; /* teal */
+  color: white;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  user-select: none;
+  border: none;
+  display: flex;
+  padding-right: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.big_txt {
+  font-size: 18px;
+}
+
+.sale_icon {
+  margin-left: 20px;
+}
+.sale_cta:hover {
+  background-color: #005757; /* darker teal */
+}

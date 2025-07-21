@@ -1,0 +1,41 @@
+.about_container {
+  max-width: 1200px;
+  margin: 60px auto;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #004d40; /* dark teal */
+}
+
+.about_content {
+  flex: 1;
+}
+
+.about_heading {
+  font-size: 36px;
+  color: teal;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about_text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.about_image_box {
+  flex: 1;
+  text-align: center;
+}
+
+.about_image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.3);
+}

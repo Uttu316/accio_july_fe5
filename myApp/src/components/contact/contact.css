@@ -1,0 +1,100 @@
+.contact_container {
+  max-width: 900px;
+  margin: 60px auto;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #004d40; /* dark teal */
+  align-items: center;
+}
+
+.contact_image_box {
+  flex: 1;
+  text-align: center;
+}
+
+.contact_image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.3);
+}
+
+.contact_form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_heading {
+  font-size: 32px;
+  color: teal;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input_group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input_icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: teal;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid teal;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  font-family: inherit;
+}
+.msg_icon {
+  top: 22%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #005757;
+  box-shadow: 0 0 5px #005757;
+}
+
+.send_button {
+  background-color: teal;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.send_button:hover {
+  background-color: #005757;
+}
+
+.send_icon {
+  font-size: 20px;
+}
