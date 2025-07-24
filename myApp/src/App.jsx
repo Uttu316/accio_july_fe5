@@ -1,19 +1,11 @@
-import Header from "./components/header";
-import HeroContainer from "./components/heroContainer";
-import Services from "./components/services";
-import AboutContainer from "./components/aboutContainer";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import HomePage from "./pages/home";
+import PracticePage from "./pages/practice";
 
 function App() {
   return (
-    <div className="page_container">
-      <Header />
-      <HeroContainer />
-      <Services />
-      <AboutContainer />
-      <Contact />
-      <Footer />
+    <div>
+      {/* <HomePage /> */}
+      <PracticePage />
     </div>
   );
 }

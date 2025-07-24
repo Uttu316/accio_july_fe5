@@ -1,0 +1,124 @@
+.todoList_container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: tan;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todoList_inputContainer {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.todoList_inputContainer input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todoList_inputContainer input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.todoList_inputContainer button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todoList_inputContainer button:hover {
+  background-color: #0056b3;
+}
+.todoList_inputContainer button:disabled {
+  background-color: lightgray;
+}
+
+/* Placeholder for task list container */
+.todoList_tasksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* TasksList container */
+.taskslist_container {
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Empty task message */
+.taskList_msg {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* Task item */
+.task_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Task text */
+.task_text {
+  flex-grow: 1;
+  margin-right: 1rem;
+  word-break: break-word;
+}
+
+/* Task actions container */
+.task_actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Edit and delete buttons */
+.task_edit_btn,
+.task_dlt_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.task_edit_btn:hover {
+  color: #0056b3;
+}
+
+.task_dlt_btn:hover {
+  color: #dc3545;
+}
+
+.task_edit_btn:disabled {
+  color: gray;
+}
+.task_dlt_btn:disabled {
+  color: gray;
+}
