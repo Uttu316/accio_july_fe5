@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./stopwatch.css";
 let intervalId;
 const StopWatch = () => {
@@ -8,12 +8,13 @@ const StopWatch = () => {
   const onStart = () => {
     setTime((currTime) => currTime + 1);
     intervalId = setInterval(() => {
+      console.log("Timer runing");
       setTime((currTime) => currTime + 1);
     }, 1000);
   };
   const onPause = () => {
     clearInterval(intervalId); //stop the interval
-    setIsPaused(true);
+    setIsPaused(true); //async
   };
   const onReset = () => {
     clearInterval(intervalId); //stop the interval
@@ -26,6 +27,23 @@ const StopWatch = () => {
       setTime((currTime) => currTime + 1);
     }, 1000);
   };
+
+  useEffect(() => {
+    //mounting
+    console.log("Mounted");
+
+    return () => {
+      //cleanup function
+      console.log("unmounting");
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isPaused) {
+      alert("Timer Paused");
+    }
+  }, [isPaused]);
 
   const isTimerStaterd = time !== 0;
 
