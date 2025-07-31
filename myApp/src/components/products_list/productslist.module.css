@@ -1,0 +1,13 @@
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.product_card {
+  /* This can be left empty or used for additional styling if needed */
+}

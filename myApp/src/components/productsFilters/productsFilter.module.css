@@ -1,0 +1,44 @@
+.products_filters {
+  background-color: #000000; /* black background */
+  color: #008080; /* teal text */
+  padding: 16px;
+  border-radius: 8px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.products_filters h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: white; /* lighter teal */
+  text-align: center;
+}
+
+.products_filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.products_filters li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  color: #00b3b3; /* lighter teal */
+  text-align: center;
+}
+
+.products_filters li:hover {
+  background-color: #004d4d; /* dark teal background on hover */
+  color: #ffffff; /* white text on hover */
+}
+
+.products_filters li.selected {
+  background-color: #004d4d; /* dark teal background */
+  color: #ffffff;
+}

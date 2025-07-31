@@ -6,6 +6,9 @@ const Header = () => {
       <h1 className="logo">Logo</h1>
       <nav className="navBar">
         <a className="navItem" href="#about">
+          Products
+        </a>
+        <a className="navItem" href="#about">
           About
         </a>
         <a className="navItem" href="#contact">
