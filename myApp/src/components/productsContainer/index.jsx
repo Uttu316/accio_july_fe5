@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ProductsList from "../products_list";
 import ProductsFilters from "../productsFilters";
 import styles from "./productsContainer.module.css";
@@ -11,7 +11,8 @@ const ProductsContainer = () => {
   const [category, setCategory] = useState(""); // selected filter category
   //   const [filteredProduct, setFilteredProducts] = useState([]);
 
-  const fetchProducts = async () => {
+  // const [c, setCount] = useState(0);
+  const fetchProducts = useCallback(async () => {
     try {
       const data = await getProducts();
       setProducts(data);
@@ -20,7 +21,7 @@ const ProductsContainer = () => {
     } catch (e) {
       setStatus("error");
     }
-  };
+  }, []);
 
   useEffect(() => {
     // after first mount fetch products
@@ -38,6 +39,7 @@ const ProductsContainer = () => {
       {isLoading && <p className={styles.loadingMsg}>Loading...</p>}
       {isError && <p className={styles.erroMsg}>Something went wrong</p>}
 
+      {/* <button onClick={() => setCount(c + 1)}>update component{c}</button> */}
       {isSucces && (
         <div className={styles.products_wrapper}>
           <ProductsFilters category={category} setCategory={setCategory} />

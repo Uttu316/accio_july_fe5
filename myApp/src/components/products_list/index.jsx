@@ -1,10 +1,13 @@
+import { useEffect, useMemo } from "react";
 import ProductCard from "../productCard";
 import styles from "./productslist.module.css";
 const ProductsList = ({ products, category }) => {
-  const filterProducts =
-    category === ""
+  const filterProducts = useMemo(() => {
+    console.log("Product List Filtering");
+    return category === ""
       ? products
       : products.filter((i) => i.category === category);
+  }, [category, products]);
 
   const isProducts = filterProducts.length > 0;
   const noProduct = filterProducts.length === 0;

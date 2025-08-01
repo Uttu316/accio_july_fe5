@@ -1,14 +1,20 @@
 import "./heroContainer.css";
 import heroImg from "../../assets/hero.svg";
 import { FaLongArrowAltRight as SaleIcon } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const HeroContainer = () => {
+  const navigate = useNavigate();
   const fistName = "AI";
   let isSale = true;
   //   const names = ["AI1", "AI2", "AI3"];
   const user = {
     name: "AI",
     age: 2,
+  };
+
+  const onSaleClick = () => {
+    navigate("/products");
   };
   return (
     <div className="heroContainer">
@@ -23,7 +29,10 @@ const HeroContainer = () => {
           I provide service that you want for your project building in
           affordable prices!!
         </p>
-        <button className={`sale_cta ${isSale ? "big_txt" : ""} `}>
+        <button
+          onClick={onSaleClick}
+          className={`sale_cta ${isSale ? "big_txt" : ""} `}
+        >
           {isSale ? "Sale is live" : "Enroll for pre sale order"}
           <SaleIcon className="sale_icon" />
         </button>

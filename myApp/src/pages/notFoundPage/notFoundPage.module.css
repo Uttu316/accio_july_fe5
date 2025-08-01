@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  height: 80vh;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.homeButton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homeButton:hover {
+  background-color: #0056b3;
+}

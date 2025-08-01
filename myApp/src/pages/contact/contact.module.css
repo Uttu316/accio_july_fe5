@@ -1,0 +1,73 @@
+.page_container {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero_image {
+  width: 300px;
+  height: auto;
+}
+
+.text_content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.text_content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text_content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.contact_form input,
+.contact_form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.submit_button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit_button:hover {
+  background-color: #0056b3;
+}

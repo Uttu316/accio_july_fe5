@@ -12,6 +12,9 @@
   color: #004d40; /* dark teal text */
   transition: box-shadow 0.3s ease;
 }
+.productLink {
+  text-decoration: none;
+}
 
 .product_card:hover {
   box-shadow: 0 4px 12px rgba(0, 77, 64, 0.4);

@@ -5,8 +5,9 @@
   padding: 20px;
 }
 
-.logo {
+.logo a {
   color: teal;
+  text-decoration: none;
 }
 
 .navBar {
@@ -20,4 +21,8 @@
   font-size: 18px;
   text-decoration: none;
   color: brown;
+}
+
+.navItem.active {
+  color: gray;
 }
