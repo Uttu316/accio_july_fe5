@@ -4,17 +4,17 @@ import Services from "../../components/services";
 import AboutContainer from "../../components/aboutContainer";
 import Contact from "../../components/contact";
 import Footer from "../../components/footer";
+import PageContainer from "../../components/pageContainer";
 
 function HomePage() {
   return (
-    <div className="page_container">
-      <Header />
+    <PageContainer>
       <HeroContainer />
       <Services />
       <AboutContainer />
       <Contact />
       <Footer />
-    </div>
+    </PageContainer>
   );
 }
 

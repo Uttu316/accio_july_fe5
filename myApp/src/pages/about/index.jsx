@@ -2,11 +2,11 @@ import React from "react";
 import Header from "../../components/header";
 import styles from "./about.module.css";
 import aboutImage from "../../assets/about_ai.svg";
+import PageContainer from "../../components/pageContainer";
 
-const AboutPage = () => {
+const AboutPage = ({ cart }) => {
   return (
-    <div className={styles.page_container}>
-      <Header />
+    <PageContainer>
       <div className={styles.hero_section}>
         <img src={aboutImage} alt="About Us" className={styles.hero_image} />
         <div className={styles.text_content}>
@@ -22,7 +22,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

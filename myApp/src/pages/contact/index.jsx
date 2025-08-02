@@ -2,11 +2,11 @@ import React from "react";
 import Header from "../../components/header";
 import styles from "./contact.module.css";
 import contactImage from "../../assets/contact_us.svg";
+import PageContainer from "../../components/pageContainer";
 
-const ContactPage = () => {
+const ContactPage = ({ cart }) => {
   return (
-    <div className={styles.page_container}>
-      <Header />
+    <PageContainer>
       <div className={styles.hero_section}>
         <img
           src={contactImage}
@@ -53,7 +53,7 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

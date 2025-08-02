@@ -71,3 +71,10 @@
 .cart_button:hover {
   background-color: #0056b3; /* darker blue */
 }
+
+.removeBt {
+  background-color: rgb(255, 194, 80);
+}
+.removeBt:hover {
+  background-color: orange;
+}

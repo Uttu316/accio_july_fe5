@@ -4,6 +4,7 @@ import styles from "./product.module.css";
 import productImage from "../../assets/hero.svg"; // placeholder image, can be replaced
 import { useParams } from "react-router";
 import { getProduct } from "../../services/getProduct";
+import PageContainer from "../../components/pageContainer";
 
 const ProductPage = () => {
   const { productId } = useParams();
@@ -34,8 +35,7 @@ const ProductPage = () => {
   const noProduct = isDone && product === null;
 
   return (
-    <div className={styles.page_container}>
-      <Header />
+    <PageContainer>
       {isLoading && (
         <h2 className={styles.loading}>Loading Product Details...</h2>
       )}
@@ -59,7 +59,7 @@ const ProductPage = () => {
           </div>
         </div>
       )}
-    </div>
+    </PageContainer>
   );
 };
 
